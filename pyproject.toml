@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "specguard"
+version = "0.1.0"
+description = "Detect breaking changes between OpenAPI specifications — a CI-friendly API contract diff tool"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "DP PAVAN" }]
+keywords = ["openapi", "api", "breaking-changes", "ci", "developer-tools"]
+dependencies = ["pyyaml>=6"]
+
+[project.scripts]
+specguard = "specguard.cli:main"
+
+[tool.setuptools]
+packages = ["specguard"]
