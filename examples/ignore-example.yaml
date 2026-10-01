@@ -1,0 +1,5 @@
+# Ignore rules for specguard (--ignore)
+# A change is ignored when ALL keys present in a rule match it.
+- path: /health        # ignore everything under the new health endpoint
+  method: GET
+- contains: operationId # ignore cosmetic operationId renames
